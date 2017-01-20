@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+	
+	<import resource="classpath:conf/yl-commons-exportservice.xml" />
+	<import resource="classpath:conf/yl-commons-reportservice.xml" />
+	<import resource="classpath:conf/yl-griffin2-job.xml" />
+	<import resource="classpath:conf/yl-griffin2-web.xml" />
+	<import resource="classpath:conf/yl-cis-security.xml" />
+	<import resource="classpath:conf/yl-cis-menu.xml" />
+	<import resource="classpath:conf/yl-cis-service.xml" />
+	<bean class="com.yl.griffin2.web.log.UserActivityLoggerResources">
+		<constructor-arg index="0">
+			<list>
+				<bean class="com.yl.cis.web.log.CisUserActivityLogger">
+					<property name="clientUserAccessor" ref="clientUserAccessor"/>
+					<property name="daoTemplate" ref="daoTemplate"/>
+					<property name="version" ref="version"/>
+				</bean>
+				<ref bean="reportSrfUserActivityLogger" />
+				<ref bean="saveSrfUserActivityLogger" />
+			</list>
+		</constructor-arg>
+	</bean>
+	<bean id="propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="location" value="classpath:system.properties" />
+	</bean>
+	<bean id="version" class="com.yl.commons.Version">
+		<property name="version" value="${system.version}" />
+		<property name="appCode" value="${system.appCode}" />
+	</bean>
+
+</beans>
