@@ -1,5 +1,9 @@
-import 'core-js/es6';
-import 'core-js/es7/reflect';
+"use strict";
+/**
+ * Created by jebaprince on 1/20/2017.
+ */
+require('core-js/es6');
+require('core-js/es7/reflect');
 require('zone.js/dist/zone');
 if (process.env.ENV === 'production') {
 }

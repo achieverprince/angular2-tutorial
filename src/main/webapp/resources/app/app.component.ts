@@ -3,13 +3,11 @@ import { QuestionService } from './question.service';
 import {Inject} from '@angular/core';
 
 @Component({
-    /*selector:'app-component',*/
-    templateUrl: './app_template/app.component.html',
-    providers:  [QuestionService]
+    selector:'app-component',
+    templateUrl: 'resources/app/app_template/app.component.html',
+    styleUrls: ['resources/app/css/style.css'],
 })
 export class AppComponent {
-    questions: any[];
-    constructor(@Inject(QuestionService) service: QuestionService) {
-        this.questions = service.getQuestions();
+    constructor() {
     }
 }

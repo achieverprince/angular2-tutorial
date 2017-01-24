@@ -1,4 +1,23 @@
 <div style="padding: 10px;">
-    <h2>Job Application for Heroes</h2>
-    <dynamic-form [questions]="questions"></dynamic-form>
+    <h2>Welcome to Angular2 tutorial</h2>
+
+    <router-outlet></router-outlet>
+
+    <div class="menuTitle">Available Samples</div>
+    <div class="menu">
+        <a routerLink="/dynamicform">Dynamic Form</a>
+    </div>
+    <div class="menu">
+        <a routerLink="/dashboard">Dashboard</a>
+    </div>
+    <div class="menu">
+        <a routerLink="/twowaybinding">Two way binding</a>
+    </div>
+    <div class="menu">
+        <a routerLink="/jqueryintegration">jQuery Integration</a>
+    </div>
+    <div class="menu">
+        <a routerLink="/jqueryuiintegration">jQuery UI Integration</a>
+    </div>
+
 </div>

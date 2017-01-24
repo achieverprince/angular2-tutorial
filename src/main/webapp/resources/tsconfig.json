@@ -6,8 +6,9 @@
     "sourceMap": true,
     "emitDecoratorMetadata": false,
     "experimentalDecorators": true,
-    "lib": ["es2015", "dom"],
+    "lib": ["es2015", "dom","es2016"],
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true
   }
 }

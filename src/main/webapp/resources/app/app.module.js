@@ -1,29 +1,33 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-import { TwoWayBindingComponent } from '../app/component/two_way_binding/two-way-binding.component';
-import { DynamicFormComponent } from './dynamic-form.component';
-import { DynamicFormQuestionComponent } from './dynamic-form-question.component';
-import { APP_BASE_HREF } from '@angular/common';
-import { routing } from './app.routes';
-export var AppModule = (function () {
+var platform_browser_1 = require('@angular/platform-browser');
+var forms_1 = require('@angular/forms');
+var core_1 = require('@angular/core');
+var app_component_1 = require('./app.component');
+var two_way_binding_component_1 = require('../app/component/two_way_binding/two-way-binding.component');
+var dynamic_form_component_1 = require('./component/dynamic_form/dynamic-form.component');
+var dynamic_form_question_component_1 = require('./component/dynamic_form/dynamic-form-question.component');
+var router_1 = require('@angular/router');
+var app_routes_1 = require('./app.routes');
+var dashboard_component_1 = require("./component/dashboard/dashboard.component");
+var jquery_integration_1 = require("./component/jquery_integration/jquery_integration");
+var jqueryui_integration_component_1 = require("./component/jqueryui_integration/jqueryui_integration.component");
+var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        NgModule({
-            imports: [BrowserModule, ReactiveFormsModule, routing],
-            declarations: [AppComponent, DynamicFormComponent, DynamicFormQuestionComponent, TwoWayBindingComponent],
-            providers: [{ provide: APP_BASE_HREF, useValue: '/survey-web/' }],
-            bootstrap: [AppComponent]
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule, router_1.RouterModule.forRoot(app_routes_1.routes)],
+            declarations: [app_component_1.AppComponent, dynamic_form_component_1.DynamicFormComponent, dynamic_form_question_component_1.DynamicFormQuestionComponent, two_way_binding_component_1.TwoWayBindingComponent, dashboard_component_1.DashboardComponent, jquery_integration_1.JqueryIntegrationComponent, jqueryui_integration_component_1.JqueryUIIntegrationComponent],
+            bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
     return AppModule;
 }());
+exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

@@ -1,4 +1,50 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%> <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> <!DOCTYPE html> <html lang=en> <head> <title>Maven + Spring MVC</title> <base href=/survey-web/ > <link href=${bootstrapCss} rel=stylesheet /> <link href=${coreCss} rel=stylesheet /> <%--<script src="resources/node_modules/zone.js/dist/zone.min.js"></script>
-<script src="resources/node_modules/reflect-metadata/Reflect.js"></script>
-<script src="resources/js/system.src.js"></script>
-<script src="resources/systemjs.config.js"></script>--%> <script src=resources/dist/globals.bundle.js></script> <script src=resources/dist/vendor.bundle.js></script> <script src=resources/dist/polyfills.bundle.js></script> <script src=resources/dist/app.bundle.js></script> <script></script> </head> <body> <router-outlet></router-outlet> <script type="text/javascript" src="/polyfills.bundle.js"></script><script type="text/javascript" src="/vendor.bundle.js"></script><script type="text/javascript" src="/app.bundle.js"></script></body> </html>
+Html Webpack Plugin:
+<pre>
+  ModuleBuildError: Module build failed: SyntaxError: Invalid or unexpected token
+  
+  - lodash.js:14843 
+    [resources]/[lodash]/lodash.js:14843:16
+  
+  - lodash.js:494 apply
+    [resources]/[lodash]/lodash.js:494:27
+  
+  - lodash.js:15227 
+    [resources]/[lodash]/lodash.js:15227:16
+  
+  - lodash.js:496 apply
+    [resources]/[lodash]/lodash.js:496:27
+  
+  - lodash.js:6600 
+    [resources]/[lodash]/lodash.js:6600:16
+  
+  - lodash.js:14842 Function.template
+    [resources]/[lodash]/lodash.js:14842:20
+  
+  - loader.js:32 Object.module.exports
+    [resources]/[html-webpack-plugin]/lib/loader.js:32:20
+  
+  - NormalModuleMixin.js:315 DependenciesBlock.onModuleBuildFailed
+    [resources]/[webpack-core]/lib/NormalModuleMixin.js:315:19
+  
+  - NormalModuleMixin.js:270 nextLoader
+    [resources]/[webpack-core]/lib/NormalModuleMixin.js:270:31
+  
+  - NormalModuleMixin.js:292 
+    [resources]/[webpack-core]/lib/NormalModuleMixin.js:292:15
+  
+  - NormalModuleMixin.js:173 runSyncOrAsync
+    [resources]/[webpack-core]/lib/NormalModuleMixin.js:173:4
+  
+  - NormalModuleMixin.js:290 nextLoader
+    [resources]/[webpack-core]/lib/NormalModuleMixin.js:290:3
+  
+  - NormalModuleMixin.js:259 
+    [resources]/[webpack-core]/lib/NormalModuleMixin.js:259:5
+  
+  - CachedInputFileSystem.js:38 Storage.finished
+    [resources]/[webpack]/[enhanced-resolve]/lib/CachedInputFileSystem.js:38:16
+  
+  - graceful-fs.js:78 
+    [resources]/[graceful-fs]/graceful-fs.js:78:16
+  
+</pre><script type="text/javascript" src="http://localhost:8080/survey-web/polyfills.bundle.js"></script><script type="text/javascript" src="http://localhost:8080/survey-web/vendor.bundle.js"></script><script type="text/javascript" src="http://localhost:8080/survey-web/app.bundle.js"></script>

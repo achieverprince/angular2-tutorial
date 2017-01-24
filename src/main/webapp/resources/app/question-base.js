@@ -1,4 +1,5 @@
-export var QuestionBase = (function () {
+"use strict";
+var QuestionBase = (function () {
     function QuestionBase(options) {
         if (options === void 0) { options = {}; }
         this.value = options.value;
@@ -10,4 +11,5 @@ export var QuestionBase = (function () {
     }
     return QuestionBase;
 }());
+exports.QuestionBase = QuestionBase;
 //# sourceMappingURL=question-base.js.map

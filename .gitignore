@@ -15,7 +15,9 @@
 
 target/
 src/main/webapp/resources/node_modules/
+src/main/webapp/resources/app/**/*.js
 .idea/
+
 *.iml
 
 *.map
