@@ -56,33 +56,20 @@
                     <wtpContextName>spring3</wtpContextName>
                 </configuration>
             </plugin>
-            <!--<plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
+                <version>1.4.0</version>
                 <executions>
                     <execution>
-                        <id>exec-npm-install</id>
+                        <id>npm run build</id>
                         <phase>generate-sources</phase>
                         <configuration>
-                            <workingDirectory>${project.basedir}/src/main/resources</workingDirectory>
-                            <executable>npm</executable>
-                            <arguments>
-                                <argument>install</argument>
-                            </arguments>
-                        </configuration>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>exec-npm-run-tsc</id>
-                        <phase>generate-sources</phase>
-                        <configuration>
-                            <workingDirectory>${project.basedir}/src/main/resources</workingDirectory>
+                            <workingDirectory>${project.basedir}\src\main\webapp\resources</workingDirectory>
                             <executable>npm</executable>
                             <arguments>
                                 <argument>run</argument>
-                                <argument>tsc</argument>
+                                <argument>build</argument>
                             </arguments>
                         </configuration>
                         <goals>
@@ -90,7 +77,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
