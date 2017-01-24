@@ -10,10 +10,12 @@ import { routes } from './app.routes';
 import {DashboardComponent} from "./component/dashboard/dashboard.component";
 import {JqueryIntegrationComponent} from "./component/jquery_integration/jquery_integration";
 import {JqueryUIIntegrationComponent} from "./component/jqueryui_integration/jqueryui_integration.component";
+import { FormsModule }   from '@angular/forms';
+import {DropdownComponent} from "./component/dropdown/dynamic_dropdown.component";
 
 @NgModule({
-    imports: [BrowserModule, ReactiveFormsModule, RouterModule.forRoot(routes)],
-    declarations: [AppComponent, DynamicFormComponent, DynamicFormQuestionComponent, TwoWayBindingComponent, DashboardComponent,JqueryIntegrationComponent,JqueryUIIntegrationComponent],
+    imports: [BrowserModule, ReactiveFormsModule, FormsModule, RouterModule.forRoot(routes)],
+    declarations: [AppComponent, DynamicFormComponent, DynamicFormQuestionComponent, TwoWayBindingComponent, DashboardComponent,JqueryIntegrationComponent,JqueryUIIntegrationComponent, DropdownComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule {

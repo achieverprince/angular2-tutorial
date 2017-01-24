@@ -8,6 +8,7 @@ import {Inject} from '@angular/core';
     templateUrl: 'resources/app/app_template/two_way_binding/two-way-binding.html'
 })
 export class TwoWayBindingComponent {
+    username:string;
     constructor() {
     }
 }

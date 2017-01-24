@@ -8,6 +8,7 @@ import { TwoWayBindingComponent } from "./component/two_way_binding/two-way-bind
 import {DynamicFormComponent} from "./component/dynamic_form/dynamic-form.component";
 import {JqueryIntegrationComponent} from "./component/jquery_integration/jquery_integration";
 import {JqueryUIIntegrationComponent} from "./component/jqueryui_integration/jqueryui_integration.component";
+import {DropdownComponent} from "./component/dropdown/dynamic_dropdown.component";
 
 // Route Configuration
 export const routes: Routes = [
@@ -20,7 +21,8 @@ export const routes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'jqueryintegration', component: JqueryIntegrationComponent },
     { path: 'jqueryuiintegration', component: JqueryUIIntegrationComponent },
-    { path: 'twowaybinding', component: TwoWayBindingComponent }
+    { path: 'twowaybinding', component: TwoWayBindingComponent },
+    { path: 'dropdown', component: DropdownComponent }
 ];
 
 RouterModule.forRoot(routes);

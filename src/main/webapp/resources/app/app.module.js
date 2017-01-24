@@ -17,13 +17,15 @@ var app_routes_1 = require('./app.routes');
 var dashboard_component_1 = require("./component/dashboard/dashboard.component");
 var jquery_integration_1 = require("./component/jquery_integration/jquery_integration");
 var jqueryui_integration_component_1 = require("./component/jqueryui_integration/jqueryui_integration.component");
+var forms_2 = require('@angular/forms');
+var dynamic_dropdown_component_1 = require("./component/dropdown/dynamic_dropdown.component");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule, router_1.RouterModule.forRoot(app_routes_1.routes)],
-            declarations: [app_component_1.AppComponent, dynamic_form_component_1.DynamicFormComponent, dynamic_form_question_component_1.DynamicFormQuestionComponent, two_way_binding_component_1.TwoWayBindingComponent, dashboard_component_1.DashboardComponent, jquery_integration_1.JqueryIntegrationComponent, jqueryui_integration_component_1.JqueryUIIntegrationComponent],
+            imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule, forms_2.FormsModule, router_1.RouterModule.forRoot(app_routes_1.routes)],
+            declarations: [app_component_1.AppComponent, dynamic_form_component_1.DynamicFormComponent, dynamic_form_question_component_1.DynamicFormQuestionComponent, two_way_binding_component_1.TwoWayBindingComponent, dashboard_component_1.DashboardComponent, jquery_integration_1.JqueryIntegrationComponent, jqueryui_integration_component_1.JqueryUIIntegrationComponent, dynamic_dropdown_component_1.DropdownComponent],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
