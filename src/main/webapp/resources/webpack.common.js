@@ -23,10 +23,10 @@ module.exports = {
                 test: /\.ts$/,
                 loaders: ['awesome-typescript-loader'/*, 'angular2-template-loader'*/]
             },
-            /*{
+            {
                 test: /\.html$/,
                 loader: 'html'
-            },*/
+            }
             /*
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
@@ -48,10 +48,10 @@ module.exports = {
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
             name: ['app', 'vendor', 'polyfills']
-        }),
+        })/*,
 
         new HtmlWebpackPlugin({
             template: './../WEB-INF/views/jsp/index.html'
-        })
+        })*/
     ]
 };

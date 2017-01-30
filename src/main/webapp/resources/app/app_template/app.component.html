@@ -1,27 +1,52 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a routerLink="/dashboard">Home <span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Samples <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li role="presentation" class="active">
+                            <a routerLink="/dashboard">Dashboard</a>
+                        </li>
+                        <li role="presentation">
+                            <a routerLink="/dynamicform">Dynamic Form</a>
+                        </li>
+                        <li role="presentation">
+                            <a routerLink="/twowaybinding">Two way binding</a>
+                        </li>
+                        <li role="presentation">
+                            <a routerLink="/jqueryintegration">jQuery Integration</a>
+                        </li>
+                        <li role="presentation">
+                            <a routerLink="/jqueryuiintegration">jQuery UI Integration</a>
+                        </li>
+                        <li role="presentation">
+                            <a routerLink="/dropdown">Dropdown</a>
+                        </li>
+                        <li role="presentation">
+                            <a routerLink="/ajax">Ajax</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<ul class="nav nav-tabs">
+
+</ul>
+
 <div style="padding: 10px;">
-    <h2>Welcome to Angular2 tutorial</h2>
-
-    <router-outlet></router-outlet>
-
-    <div class="menuTitle">Available Samples</div>
-    <div class="menu">
-        <a routerLink="/dynamicform">Dynamic Form</a>
+    <h2></h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Welcome to Angular2 tutorials</h3>
+        </div>
+        <div class="panel-body">
+            <router-outlet></router-outlet>
+        </div>
     </div>
-    <div class="menu">
-        <a routerLink="/dashboard">Dashboard</a>
-    </div>
-    <div class="menu">
-        <a routerLink="/twowaybinding">Two way binding</a>
-    </div>
-    <div class="menu">
-        <a routerLink="/jqueryintegration">jQuery Integration</a>
-    </div>
-    <div class="menu">
-        <a routerLink="/jqueryuiintegration">jQuery UI Integration</a>
-    </div>
-
-    <div class="menu">
-        <a routerLink="/dropdown">Dropdown</a>
-    </div>
-
 </div>

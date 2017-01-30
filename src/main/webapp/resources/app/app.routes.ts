@@ -9,6 +9,7 @@ import {DynamicFormComponent} from "./component/dynamic_form/dynamic-form.compon
 import {JqueryIntegrationComponent} from "./component/jquery_integration/jquery_integration";
 import {JqueryUIIntegrationComponent} from "./component/jqueryui_integration/jqueryui_integration.component";
 import {DropdownComponent} from "./component/dropdown/dynamic_dropdown.component";
+import {AjaxComponent} from "./component/ajax/ajax.component";
 
 // Route Configuration
 export const routes: Routes = [
@@ -22,7 +23,8 @@ export const routes: Routes = [
     { path: 'jqueryintegration', component: JqueryIntegrationComponent },
     { path: 'jqueryuiintegration', component: JqueryUIIntegrationComponent },
     { path: 'twowaybinding', component: TwoWayBindingComponent },
-    { path: 'dropdown', component: DropdownComponent }
+    { path: 'dropdown', component: DropdownComponent },
+    { path: 'ajax', component: AjaxComponent }
 ];
 
 RouterModule.forRoot(routes);
