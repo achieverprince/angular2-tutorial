@@ -40,5 +40,8 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.7/highcharts.js" integrity="sha256-+ltB054ruTgrVx4brD3ZOKskPqoidYNExamoBTNx0d0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.7/highcharts-3d.js" integrity="sha256-WIrKb7J1ljNvBn3Yb9dg6sB4D0ksKIZk1bPGfFEEVj8=" crossorigin="anonymous"></script>
 </body>
 </html>

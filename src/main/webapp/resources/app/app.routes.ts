@@ -10,6 +10,7 @@ import {JqueryIntegrationComponent} from "./component/jquery_integration/jquery_
 import {JqueryUIIntegrationComponent} from "./component/jqueryui_integration/jqueryui_integration.component";
 import {DropdownComponent} from "./component/dropdown/dynamic_dropdown.component";
 import {AjaxComponent} from "./component/ajax/ajax.component";
+import {HighchartComponent} from "./component/highchart/highchart.component";
 
 // Route Configuration
 export const routes: Routes = [
@@ -24,7 +25,8 @@ export const routes: Routes = [
     { path: 'jqueryuiintegration', component: JqueryUIIntegrationComponent },
     { path: 'twowaybinding', component: TwoWayBindingComponent },
     { path: 'dropdown', component: DropdownComponent },
-    { path: 'ajax', component: AjaxComponent }
+    { path: 'ajax', component: AjaxComponent },
+    { path: 'highchart', component: HighchartComponent}
 ];
 
 RouterModule.forRoot(routes);

@@ -14,10 +14,11 @@ import { FormsModule }   from '@angular/forms';
 import {DropdownComponent} from "./component/dropdown/dynamic_dropdown.component";
 import {AjaxComponent} from "./component/ajax/ajax.component";
 import { HttpModule }    from '@angular/http';
+import {HighchartComponent} from "./component/highchart/highchart.component";
 
 @NgModule({
     imports: [BrowserModule, ReactiveFormsModule, FormsModule, RouterModule.forRoot(routes),HttpModule],
-    declarations: [AppComponent, DynamicFormComponent, DynamicFormQuestionComponent, TwoWayBindingComponent, DashboardComponent,JqueryIntegrationComponent,JqueryUIIntegrationComponent, DropdownComponent,AjaxComponent],
+    declarations: [AppComponent, DynamicFormComponent, DynamicFormQuestionComponent, TwoWayBindingComponent, DashboardComponent,JqueryIntegrationComponent,JqueryUIIntegrationComponent, DropdownComponent,AjaxComponent,HighchartComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule {
